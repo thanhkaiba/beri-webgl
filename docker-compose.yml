@@ -3,4 +3,4 @@ services:
   sailorinfo:
     build: .
     ports:
-      - "8080:80"
+      - "8765:80"
