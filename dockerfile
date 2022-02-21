@@ -1,4 +1,4 @@
-FROM nginx
+FROM helder/nginx
 COPY . /usr/share/nginx/html
 
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY default.conf /etc/nginx/site-avaiable/default.conf
