@@ -4,7 +4,71 @@ body { padding: 0; margin: 0;}
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: linear-gradient(180deg,#0a1537,rgba(10,21,55,.54) 50.7%,#0a1537 91.05%),url('bg-dashboard.png');
+    background-image: url('bg-dashboard.png');
+    background-size: cover;
+}
+.header {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+.menu {
+    width: 60%;
+    margin: 0px auto;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    font-size: large;
+}
+.menu-item {
+    padding: 15px 0px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    margin: 0px 25px;
+    cursor: pointer;
+    background-color: #37260a;
+    color: #fff;
+    text-decoration: none;
+    background-image: url('wood-texture.jpg');
+}
+.menu-item:hover {
+    color: rgb(255, 236, 172);
+}
+.logo, .logo img{
+    height: 120px;
+    position: absolute;
+}
+.footer {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-item {
+    padding: 0px 30px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-item:hover {
+    color: rgb(255, 249, 158);
 }
 #unity-container {
     position: absolute;

@@ -4,12 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Piratera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;800;900&display=swap" rel="stylesheet"> 
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div class="fixed-background-2"></div>
-    <div class="logo"></div>
+    <div class="header">
+      <div class="logo">
+        <a href="https://piratera.io" target="_blank" title="Piratera - Make it your era"><img src="./TemplateData/logo.png" /></a>
+      </div>
+      <div class="menu">
+        <a target="_blank" href="https://marketplace.piratera.io/marketplace" class="menu-item">Buy Sailors</a>
+        <a target="_blank" href="https://marketplace.piratera.io/marketplace/posters" class="menu-item">Buy Wanted Posters</a>
+        <a target="_blank" href="https://marketplace.piratera.io/withdraw" class="menu-item">Buy BERI</a>
+      </div>
+    </div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=540></canvas>
       <div id="unity-loading-bar">
@@ -24,6 +36,17 @@
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">Piratera - Make It Your Era</div>
       </div>
+    </div>
+    <div class="footer">
+      <a target="_blank" href="https://marketplace.piratera.io/marketplace" class="footer-item">
+        <img src="./TemplateData/macos.svg" style="margin-right: 5px" />MacOS Download
+      </a>
+      <a target="_blank" href="https://marketplace.piratera.io/marketplace/posters" class="footer-item">
+        <img src="./TemplateData/windows.svg" style="margin-right: 5px" />Windows Download
+      </a>
+      <a target="_blank" href="https://marketplace.piratera.io/withdraw" class="footer-item">
+        <img src="./TemplateData/android.svg" style="margin-right: 5px" />Android Download
+      </a>
     </div>
     <script>
       var container = document.querySelector("#unity-container");
