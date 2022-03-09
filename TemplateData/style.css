@@ -1,88 +1,8 @@
-body { padding: 0; margin: 0;}
-.fixed-background-2 { position: fixed;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-image: url('bg-dashboard.png');
-    background-size: cover;
-}
-.header {
-    display: flex;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-}
-.menu {
-    width: 60%;
-    margin: 0px auto;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    font-size: large;
-}
-.menu-item {
-    padding: 15px 0px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 220px;
-    margin: 0px 25px;
-    cursor: pointer;
-    background-color: #37260a;
-    color: #fff;
-    text-decoration: none;
-    background-image: url('wood-texture.jpg');
-}
-.menu-item:hover {
-    color: rgb(255, 236, 172);
-}
-.logo, .logo img{
-    height: 120px;
-    position: absolute;
-}
-.footer {
-    position: absolute;
-    bottom: 50px;
-    width: 100%;
-    left: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer-item {
-    padding: 0px 30px;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: large;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer-item:hover {
-    color: rgb(255, 249, 158);
-}
-#unity-container {
-    position: absolute;
-}
+body { padding: 0; margin: 0 }
+#unity-container { position: absolute }
 #unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
 #unity-container.unity-mobile { width: 100%; height: 100% }
-#unity-canvas {
-    background: #231F20;
-    border: #2e1a12 solid 8px;
-    -webkit-border-image: url('wood-texture.jpg') 200 stretch;
-    -moz-border-image: url('wood-texture.jpg') 200 stretch;
-    border-image: url('wood-texture.jpg') 200 stretch;
-    -webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
-}
+#unity-canvas { background: #231F20 }
 .unity-mobile #unity-canvas { width: 100%; height: 100% }
 #unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
 #unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
@@ -91,6 +11,6 @@ body { padding: 0; margin: 0;}
 #unity-footer { position: relative }
 .unity-mobile #unity-footer { display: none }
 #unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
-#unity-build-title { color: #fff; float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
+#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
 #unity-fullscreen-button { float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }

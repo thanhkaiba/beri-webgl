@@ -3,25 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Piratera - Make It Your Era | WebGL Player</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;800;900&display=swap" rel="stylesheet"> 
+    <title>Unity WebGL Player | Piratera</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div class="fixed-background-2"></div>
-    <div class="header">
-      <div class="logo">
-        <a href="https://piratera.io" target="_blank" title="Piratera - Make it your era"><img src="./TemplateData/logo.png" /></a>
-      </div>
-      <div class="menu">
-        <a target="_blank" href="https://marketplace.piratera.io/marketplace" class="menu-item">Buy Sailors</a>
-        <a target="_blank" href="https://marketplace.piratera.io/marketplace/posters" class="menu-item">Buy Wanted Posters</a>
-        <a target="_blank" href="https://marketplace.piratera.io/withdraw" class="menu-item">Buy BERI</a>
-      </div>
-    </div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=540></canvas>
       <div id="unity-loading-bar">
@@ -32,21 +18,10 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
-        <!-- <div id="unity-webgl-logo"></div> -->
+        <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Piratera - Make It Your Era</div>
+        <div id="unity-build-title">Piratera</div>
       </div>
-    </div>
-    <div class="footer">
-      <a target="_blank" href="https://drive.google.com/file/d/1oWrCxbeG5JnDWte0gBm2dyK03c2Izec6/view?usp=sharing" class="footer-item">
-        <img src="./TemplateData/macos.svg" style="margin-right: 5px" />MacOS Download
-      </a>
-      <a target="_blank" href="https://drive.google.com/file/d/1yhgJnyJKCjb6LYSpcKnMUdw4zHERnQ25/view?usp=sharing" class="footer-item">
-        <img src="./TemplateData/windows.svg" style="margin-right: 5px" />Windows Download
-      </a>
-      <a target="_blank" href="https://drive.google.com/file/d/1EcCJc_lQsw3wXVhJEnED_e77r9cuxsa5/view?usp=sharing" class="footer-item">
-        <img src="./TemplateData/android.svg" style="margin-right: 5px" />Android Download
-      </a>
     </div>
     <script>
       var container = document.querySelector("#unity-container");
@@ -83,13 +58,13 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/beri-webgl.loader.js";
       var config = {
-        dataUrl: buildUrl + "/beri-webgl.data.gz",
-        frameworkUrl: buildUrl + "/beri-webgl.framework.js.gz",
-        codeUrl: buildUrl + "/beri-webgl.wasm.gz",
+        dataUrl: buildUrl + "/beri-webgl.data",
+        frameworkUrl: buildUrl + "/beri-webgl.framework.js",
+        codeUrl: buildUrl + "/beri-webgl.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Kralus.Studio",
         productName: "Piratera",
-        productVersion: "1.01.019",
+        productVersion: "1.01.023",
         showBanner: unityShowBanner,
       };
 
